@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Affirmation Generator</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
     <audio src="{{ url_for('static', filename='lofi.mp3') }}" ...>
   </head>
   <!-- evil mode angel mode buttons -->
@@ -108,7 +107,8 @@
     </div>
 
     <div class="particles"></div>
-    <script src="/static/script.js"></script>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+
     <script>
       const music = document.getElementById("background-music");
       const toggleBtn = document.getElementById("music-toggle");
